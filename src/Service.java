@@ -12,7 +12,6 @@ public class Service {
         this.courriel = courriel;
     }
 
-
     public String getNomService() {
         return nomService;
     }

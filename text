@@ -1,0 +1,104 @@
+1. Analyse des exigences et Modélisation
+Diagramme de classes
+Classe Patient
+
+Attributs : codePatient, nom, téléphone, courriel
+Méthodes : getters/setters
+Classe Médecin
+
+Attributs : matricule, nom, téléphone, courriel, service
+Méthodes : prescrireExamen(), getters/setters
+Classe Service
+
+Attributs : nomService, numéroTéléphone, courriel
+Méthodes : getters/setters
+Classe Examen
+
+Attributs : nomExamen, datePrescription, paramètres
+Méthodes : getters/setters
+Classe RDV
+
+Attributs : numéroRDV, dateDemande, laboratoire, patient, examen, dateRDV
+Méthodes : getters/setters
+Classe Laboratoire
+
+Attributs : codeLaboratoire, nom, adresse, téléphone, courriel, examensDisponibles
+Méthodes : recevoirDemandeRDV(), donnerRDV(), getters/setters
+Classe Notification
+
+Attributs : typeNotification (Email, SMS), destinataire, message
+Méthodes : envoyerNotification()
+Diagramme de séquence
+Élaborer des diagrammes de séquence pour les scénarios clés :
+
+Prescription d'examen
+Prise de RDV
+Traitement des RDV
+Notification des résultats d'examen
+2. Conception et Réalisation
+Principes SOLID et GRASP
+S: Classe unique responsable (ex: classe Médecin pour prescrire des examens)
+O: Ouvert pour extension mais fermé pour modification (ex: ajouter de nouveaux types d'examens sans modifier les classes existantes)
+L: Substitution de Liskov (ex: les classes dérivées de Examen peuvent être utilisées comme des instances de Examen)
+I: Ségrégation des interfaces (ex: différentes interfaces pour les notifieurs)
+D: Inversion des dépendances (ex: utiliser des interfaces pour injecter des dépendances)
+Patrons de conception
+Patron Fabrique (Factory)
+
+Utilisé pour créer des instances de différents types d'examens
+Classe : ExamenFactory
+Justification : Simplifie la création d'objets complexes et les rend plus modifiables
+Patron Observateur (Observer)
+
+Utilisé pour la gestion des notifications
+Classes : NotificationManager, NotifieurEmail, NotifieurSMS
+Justification : Permet de notifier plusieurs observateurs (écouteurs) d'un évènement sans les coupler étroitement
+Patron Adaptateur (Adapter)
+
+Utilisé pour adapter les réponses des laboratoires au format attendu par l'application
+Classe : LaboratoireAdapter
+Justification : Facilite l'intégration avec différents systèmes de laboratoire
+Patron Singleton
+
+Utilisé pour le gestionnaire de notifications afin de s'assurer qu'il n'y a qu'une seule instance
+Classe : NotificationManager
+Justification : Assure une instance unique pour la gestion des notifications
+3. Implémentation
+Enregistrement des prescriptions
+
+Implémentation de la méthode prescrireExamen() dans la classe Médecin
+Création des instances d'examens à l'aide de ExamenFactory
+Prise de RDV
+
+Envoi des demandes de RDV aux laboratoires
+Implémentation de la méthode recevoirDemandeRDV() dans la classe Laboratoire
+Simuler les laboratoires avec des données pré-définies
+Traitement des RDV
+
+Implémentation de la méthode donnerRDV() dans la classe Laboratoire
+Traitement des réponses des laboratoires et enregistrement des RDV obtenus
+Traitement des résultats des examens
+
+Réception des résultats des examens sous forme de chaîne de caractères
+Enregistrement des résultats dans le système et notification aux médecins et services concernés
+4. Scénarios d’exécution
+Scénario de prescription
+
+Médecin prescrit des examens pour un patient
+Demandes de RDV envoyées aux laboratoires
+Scénario de prise de RDV
+
+Laboratoires reçoivent les demandes de RDV et attribuent des dates
+RDV enregistrés et patients notifiés
+Scénario de résultats d’examens
+
+Laboratoires envoient les résultats des examens au centre de soin
+Résultats enregistrés et médecins/sujets notifiés
+5. Documentation et Git
+Documenter chaque patron de conception utilisé avec des exemples concrets de votre implémentation
+Utiliser des commits réguliers et significatifs dans Git
+Créer une documentation utilisateur pour expliquer le fonctionnement de l'application
+6. Interface Graphique
+Concevoir une interface utilisateur intuitive pour la gestion des examens, prise de RDV, et visualisation des résultats
+Utiliser un framework adapté comme JavaFX pour la partie graphique
+En suivant ces étapes, vous pourrez créer une application robuste et bien conçue qui respecte les principes SOLID et GRASP, tout en utilisant des patrons de conception pour résoudre des problèmes spécifiques.

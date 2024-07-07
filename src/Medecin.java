@@ -56,9 +56,11 @@ public class Medecin {
         this.courriel = courriel;
     }
 
-    public Prescription creerPrescription(String nom, Date date, Patient patient, String uniqueId) {
-        return new Prescription(nom, date, patient, uniqueId);
-    }
-    
+    public Prescription prescrire(String nom, Date date, Patient patient, String uniqueId, CentreSoin centreSoin) {
+        Prescription prescription= new Prescription(nom, date, patient, uniqueId);
+        patient.addPrescription(prescription);
+        centreSoin.
 
+        return prescription;
+    }
 }
