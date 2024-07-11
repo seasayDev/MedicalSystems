@@ -1,6 +1,7 @@
+//SINGLETON
+
+
 import java.util.ArrayList;
-
-
 public class CentreSoin {
     ArrayList <Service> services = new ArrayList<Service>();
     ArrayList <Laboratoire> laboratoires = new ArrayList<Laboratoire>();
@@ -24,4 +25,6 @@ public class CentreSoin {
     public Laboratoire getRandomLabo(){
         return laboratoires.get((int)(Math.random()*laboratoires.size()));
     }
+
+    
 }
