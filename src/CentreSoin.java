@@ -24,4 +24,6 @@ public class CentreSoin {
     public Laboratoire getRandomLabo(){
         return laboratoires.get((int)(Math.random()*laboratoires.size()));
     }
+
+    
 }

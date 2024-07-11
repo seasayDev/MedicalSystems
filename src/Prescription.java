@@ -4,13 +4,14 @@ public class Prescription {
     private String nom;
     private Patient patient;
     Date date;
-    private String uniqueId;
+    private int uniqueId;
+    private static int uidCounter = 0;
 
-    public Prescription(String nom, Date date,Patient patient, String uniqueId) {
+    public Prescription(String nom, Date date,Patient patient) {
         this.nom = nom;
         this.patient = patient;
         this.date = date;
-        this.uniqueId = uniqueId;
+        this.uniqueId = uidCounter++;
     }
 
     public Patient getPatient() {
@@ -29,7 +30,7 @@ public class Prescription {
         return date;
     }
 
-    public String getUniqueId() {
+    public int getUniqueId() {
         return uniqueId;
     }
 
