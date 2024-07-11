@@ -1,17 +1,21 @@
 import java.util.Date;
 public class Prescription {
-    private String nomExamen;
     private Patient patient;
     Date date;
     private int uniqueId;
     private static int uidCounter = 0;
+    private Examen examen;
 
-    public Prescription(String nomExamen, Date date,Patient patient) {
-        this.nomExamen = nomExamen;
+    public Prescription( Date date,Patient patient,Examen examen) {
         this.patient = patient;
-        this.date = date;
+        this.date = new Date();
         this.uniqueId = uidCounter++;
+        this.examen = examen;
 
+    }
+
+    public Examen getExamen() {
+        return examen;
     }
 
     public Patient getPatient() {
@@ -19,7 +23,7 @@ public class Prescription {
     }
 
     public String getNomExamen() {
-        return nomExamen;
+        return examen.getNom();
     }
 
     public Date getDate() {

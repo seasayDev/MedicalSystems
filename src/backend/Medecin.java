@@ -1,5 +1,4 @@
 import java.sql.Date;
-import java.util.ArrayList;
 
 public class Medecin {
     private Service service;
@@ -56,6 +55,8 @@ public class Medecin {
         this.courriel = courriel;
     }
 
-
-    
+    public Prescription prescrire(Date date, Patient patient, CentreSoin centreSoin,Examen examen) {
+        Prescription prescription= new Prescription(date, patient,examen);
+        return prescription;
+    }
 }
