@@ -6,6 +6,7 @@ public class CentreSoin {
     ArrayList <Service> services = new ArrayList<Service>();
     ArrayList <Patient> patients = new ArrayList<Patient>();
     ArrayList <Medecin> medecins = new ArrayList<Medecin>();
+        
    
 
     public CentreSoin() {

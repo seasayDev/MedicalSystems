@@ -16,7 +16,7 @@ public class RdvController {
     }
 
     public checkAvailability(String rdv){
-        return fileRdvs.contains(rdv);
+        
     }
     
 }

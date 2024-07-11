@@ -4,18 +4,18 @@ public class Prescription {
     Date date;
     private int uniqueId;
     private static int uidCounter = 0;
-    private Examen examen;
+    private String nom;
 
-    public Prescription( Date date,Patient patient,Examen examen) {
+    public Prescription(Patient patient,String nom) {
         this.patient = patient;
         this.date = new Date();
         this.uniqueId = uidCounter++;
-        this.examen = examen;
+        this.nom=nom;
 
     }
 
-    public Examen getExamen() {
-        return examen;
+    public String getNom() {
+        return nom;
     }
 
     public Patient getPatient() {
@@ -23,7 +23,7 @@ public class Prescription {
     }
 
     public String getNomExamen() {
-        return examen.getNom();
+        return nom;
     }
 
     public Date getDate() {

@@ -55,8 +55,8 @@ public class Medecin {
         this.courriel = courriel;
     }
 
-    public Prescription prescrire(Date date, Patient patient, CentreSoin centreSoin,Examen examen) {
-        Prescription prescription= new Prescription(date, patient,examen);
+    public Prescription prescrire(Patient patient, CentreSoin centreSoin, String nom) {
+        Prescription prescription= new Prescription( patient, nom);
         return prescription;
     }
 }
