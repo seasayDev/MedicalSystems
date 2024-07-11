@@ -2,13 +2,13 @@ import java.util.ArrayList;
 
 
 public class CentreSoin {
-    ArrayList <Service> services = new ArrayList<Service>();
-    ArrayList <Laboratoire> laboratoires = new ArrayList<Laboratoire>();
-    ArrayList <Patient> patients = new ArrayList<Patient>();
-    ArrayList <Rdv> rdvs = new ArrayList<Rdv>();
-    ArrayList <Medecin> medecins = new ArrayList<Medecin>();
-    ArrayList <ExamenElementaire> prescriptionExamElementaire= new ArrayList<ExamenElementaire>();
-    ArrayList <ExamenCompose> prescriptionExamComposé= new ArrayList<ExamenCompose>();
+    ArrayList <Service> services;
+    ArrayList <Laboratoire> laboratoires;
+    ArrayList <Patient> patients;
+    ArrayList <Rdv> rdvs;
+    ArrayList <Medecin> medecins;
+    ArrayList <ExamenElementaire> prescriptionExamElementaire;
+    ArrayList <ExamenCompose> prescriptionExamComposé;
 
     public CentreSoin() {
         services = new ArrayList<Service>();

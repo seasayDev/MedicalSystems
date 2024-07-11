@@ -8,29 +8,14 @@ public class Patient {
     private String nom;
     private String numTel;
     private String courriel;
-    private ArrayList<Prescription> prescriptions = new ArrayList<Prescription>();
-    private ArrayList<Examen> examens = new ArrayList<Examen>();
 
     public Patient(String codePatient, String nom, String numTel, String courriel) {
         this.codePatient = codePatient;
         this.nom = nom;
         this.numTel = numTel;
         this.courriel = courriel;
-        prescriptions = new ArrayList<Prescription>();
-        examens = new ArrayList<Examen>();
     }
 
-    public void addPrescription(Prescription prescription){
-        prescriptions.add(prescription);
-    }
-
-    public ArrayList<Examen> getExamens() {
-        return examens;
-    }
-
-    public ArrayList<Prescription> getPrescriptions() {
-        return prescriptions;
-    }
 
     public String getCodePatient() {
         return codePatient;
