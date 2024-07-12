@@ -1,9 +1,26 @@
-public class ExamenCompose extends Examen{
-/*Examen anémie :composé des examens « analyse de sang : FSC », myélogramme et
-« analyse d’urine : protéinurie et glycosurie »
+import java.util.ArrayList;
+import java.util.List;
 
-Examen thyroïde : composé des examens « échographie : Thyroïde», « examen anémie » et
-« analyse de sang : TSH ».
-*/
+public abstract class ExamenCompose implements Examen {
+    private String nomExamen;
+    private ArrayList<ExamenElementaire> examenInclus = new ArrayList<>();
 
+    public ExamenCompose() {
+        initializeExamens();
+    }
+
+    public abstract void initializeExamens();
+
+    @Override
+    public String getNomExamen() {
+        return nomExamen;
+    }
+
+    public ArrayList<ExamenElementaire> getExamenInclus() {
+        return examenInclus;
+    }
+
+    public void addExamenElementaire(ExamenElementaire examenElementaire) {
+        examenInclus.add(examenElementaire);
+    }
 }

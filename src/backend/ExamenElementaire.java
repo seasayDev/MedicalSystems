@@ -1,18 +1,19 @@
-public class ExamenElementaire extends Examen{
+import java.util.ArrayList;
 
-    // Analyse de sang. Les paramètres de cette analyse sont : Base, FSC, HDL et TSH
+public abstract class ExamenElementaire {
+    protected ArrayList<String> parametrePossible;
+    protected ArrayList<String> parametreChoisis;
 
-    // Radiographie rayon X. Concerne une partie du corps : Membre inférieure, Membre
-    // supérieure, Thorax, Crane et Poumon
+    public ExamenElementaire() {
+        parametrePossible = new ArrayList<>();
+        parametreChoisis = new ArrayList<>();
+    }
 
-    // Radiographie IRM. Concerne une partie du corps : Cerveau, Moelle épinière et Hanche
-
-    // Endoscopie. Il y a plusieurs types : Œsophage, bronchique et Urologique
-
-    // Analyse d’urine : Les paramètres de cette analyse sont : Base, Ph, protéinurie, glycosurie et
-    // cétosurie
-
-    // Myélogramme
-
-    // Échographie. Peut concerner les organes suivants : Thyroïde, Cerveau et obstétricale
+    public void addParametre(String choisit) {
+        if (parametrePossible.contains(choisit)) {
+            parametreChoisis.add(choisit);
+        } else {
+            System.out.println("Le parametre entre n'est pas valide!");
+        }
+    }
 }

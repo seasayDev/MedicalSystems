@@ -1,14 +1,8 @@
-public abstract class Examen {
-    private String nom;
+import java.util.Date;
 
-    public Examen(String nom) {
-        this.nom = nom;
-    }
-
-    public String getNom() {
-        return nom;
-    }
-
-    Examen(){}
+public interface Examen {
     
+    public String getNomExamen();
+    public Date getDatePrescription();
+    public String getParametres();
 }
