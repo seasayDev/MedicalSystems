@@ -1,6 +1,8 @@
+package backend;
 import java.util.ArrayList;
 
-public abstract class ExamenElementaire {
+
+public abstract class ExamenElementaire implements Examen {
     private String nomExamen;
     protected ArrayList<String> parametrePossible;
     protected ArrayList<String> parametreChoisis;
@@ -10,7 +12,7 @@ public abstract class ExamenElementaire {
         parametreChoisis = new ArrayList<>();
     }
 
-    @Override
+
     public String getNomExamen() {
         return nomExamen;
     }

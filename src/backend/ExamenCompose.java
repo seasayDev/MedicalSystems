@@ -1,9 +1,10 @@
+package backend;
 import java.util.ArrayList;
 import java.util.List;
 
 public abstract class ExamenCompose implements Examen {
     private String nomExamen;
-    private ArrayList<ExamenElementaire> examenInclus = new ArrayList<>();
+    private ArrayList<Examen> examenInclusElementaire = new ArrayList<>();
 
     public ExamenCompose() {
         initializeExamens();
@@ -20,11 +21,11 @@ public abstract class ExamenCompose implements Examen {
         this.nomExamen = nomExamen;
     }
 
-    public ArrayList<ExamenElementaire> getExamenInclus() {
-        return examenInclus;
+    public ArrayList<Examen> getExamenInclus() {
+        return examenInclusElementaire;
     }
 
-    public void addExamenElementaire(ExamenElementaire examenElementaire) {
-        examenInclus.add(examenElementaire);
+    public void addExamen(Examen examenElementaire) {
+        examenInclusElementaire.add(examenElementaire);
     }
 }

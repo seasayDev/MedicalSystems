@@ -8,9 +8,9 @@ public class Anemie extends ExamenCompose {
         Myelogramme mylelogramme = new Myelogramme();
         AnalyseUrine analyseUrine = new AnalyseUrine();
 
-        addExamenElementaire(analyseSang);
-        addExamenElementaire(mylelogramme);
-        addExamenElementaire(analyseUrine);
+        addExamen(analyseSang);
+        addExamen(mylelogramme);
+        addExamen(analyseUrine);
 
         analyseSang.parametreChoisis.add("FSC");
         analyseUrine.parametreChoisis.add("proteinurie");

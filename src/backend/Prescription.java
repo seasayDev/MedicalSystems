@@ -1,3 +1,4 @@
+package backend;
 import java.util.Date;
 public class Prescription {
     private String nomExamen;

@@ -8,11 +8,10 @@ public class Thyroide extends ExamenCompose {
         Anemie anemie = new Anemie();
         AnalyseSang analyseSang = new AnalyseSang();
 
-        addExamenElementaire(echographie);
-        addExamenElementaire(anemie);
-        addExamenElementaire(analyseSang);
+        addExamen(echographie);
+        addExamen(analyseSang);
+        addExamen(anemie);
 
-        
         echographie.parametreChoisis.add("thyroide");
         analyseSang.parametreChoisis.add("TSH");
         setNomExamen("Thyroide");

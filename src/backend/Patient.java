@@ -1,6 +1,6 @@
 //Le patient est caractérisé par un code (code patient), son nom, son numéro de téléphone et son
 //courriel.
-
+package backend;
 import java.util.ArrayList;
 
 public class Patient {
