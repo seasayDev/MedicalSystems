@@ -5,7 +5,7 @@ public class Anemie extends ExamenCompose {
     @Override
     public void initializeExamens() {
         AnalyseSang analyseSang = new AnalyseSang();
-        Mylelogramme mylelogramme = new Mylelogramme();
+        Myelogramme mylelogramme = new Myelogramme();
         AnalyseUrine analyseUrine = new AnalyseUrine();
 
         addExamenElementaire(analyseSang);
@@ -15,6 +15,7 @@ public class Anemie extends ExamenCompose {
         analyseSang.parametreChoisis.add("FSC");
         analyseUrine.parametreChoisis.add("proteinurie");
         analyseUrine.parametreChoisis.add("glycosurie");
+        setNomExamen("Anemie");
     }
 }
 

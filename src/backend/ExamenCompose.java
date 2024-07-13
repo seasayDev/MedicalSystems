@@ -16,6 +16,10 @@ public abstract class ExamenCompose implements Examen {
         return nomExamen;
     }
 
+    public void setNomExamen(String nomExamen) {
+        this.nomExamen = nomExamen;
+    }
+
     public ArrayList<ExamenElementaire> getExamenInclus() {
         return examenInclus;
     }

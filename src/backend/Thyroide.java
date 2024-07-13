@@ -15,5 +15,6 @@ public class Thyroide extends ExamenCompose {
         
         echographie.parametreChoisis.add("thyroide");
         analyseSang.parametreChoisis.add("TSH");
+        setNomExamen("Thyroide");
     }
 }
