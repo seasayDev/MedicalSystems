@@ -28,4 +28,8 @@ public abstract class ExamenCompose implements Examen {
     public void addExamen(Examen examenElementaire) {
         examenInclusElementaire.add(examenElementaire);
     }
+
+    public void addParametre(String choisit) {}
+
+    public void addParametres(ArrayList<String> parametres) {}
 }

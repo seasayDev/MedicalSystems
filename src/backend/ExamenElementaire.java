@@ -25,6 +25,19 @@ public abstract class ExamenElementaire implements Examen {
     public void addParametre(String choisit) {
         if (parametrePossible.contains(choisit)) {
             parametreChoisis.add(choisit);
-        } 
+        } else{
+            System.out.println("Le paramètre " + choisit + " n'est pas valide pour " + nomExamen);
+        }
+    }
+
+    public void addParametres(ArrayList<String> parametres) {
+        for (String parametre : parametres) {
+            addParametre(parametre);
+        }
+    }
+
+
+    public String toString() {
+        return nomExamen + " " + parametreChoisis + " " + parametrePossible;
     }
 }

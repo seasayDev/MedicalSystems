@@ -1,5 +1,7 @@
 package backend;
 
+import java.util.ArrayList;
+
 public class Anemie extends ExamenCompose {
 
     @Override
@@ -17,5 +19,6 @@ public class Anemie extends ExamenCompose {
         analyseUrine.parametreChoisis.add("glycosurie");
         setNomExamen("Anemie");
     }
+
 }
 
