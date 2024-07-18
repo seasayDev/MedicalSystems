@@ -1,12 +1,13 @@
 //SINGLETON
 
-
 import java.util.ArrayList;
 public class CentreSoin {
     ArrayList <Service> services = new ArrayList<Service>();
     ArrayList <Patient> patients = new ArrayList<Patient>();
     ArrayList <Medecin> medecins = new ArrayList<Medecin>();
-        
+    ArrayList <ExamenElementaire> prescriptionExamElementaire= new ArrayList<ExamenElementaire>();
+    ArrayList <ExamenCompose> prescriptionExamComposé= new ArrayList<ExamenCompose>();
+
    
 
     public CentreSoin() {

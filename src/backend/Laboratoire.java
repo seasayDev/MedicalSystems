@@ -46,6 +46,10 @@ public class Laboratoire {
         return numTel;
     }
 
+    public ArrayList<Rdv> getRdvsApprouve() {
+        return rdvsApprouve;
+    }
+
 
 
 

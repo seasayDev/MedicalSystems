@@ -1,16 +1,17 @@
-import java.util.Date;
 
 public class Rdv {
     private String uniqueId;
-    private Date date;
+    private String date;
     private String time;
     private Examen examen;
     private Laboratoire laboratoire;
     private Patient patient;
     private static int uidCounter = 0;
     
-    public Rdv(Date date, Examen examen, Laboratoire laboratoire, Patient patient) {
+    
+    public Rdv(String date, Examen examen, Laboratoire laboratoire, Patient patient, String time) {
         this.date = date;
+        this.time = time;
         this.examen = examen;
         this.laboratoire = laboratoire;
         this.patient = patient;
@@ -27,7 +28,7 @@ public class Rdv {
         return uniqueId;
     }
 
-    public Date getDate() {
+    public String getDate() {
         return date;
     }
 
@@ -47,7 +48,7 @@ public class Rdv {
         this.uniqueId = uniqueId;
     }
 
-    public void setDate(Date date) {
+    public void setDate(String date) {
         this.date = date;
     }
 

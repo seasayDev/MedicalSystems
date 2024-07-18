@@ -15,8 +15,17 @@ public class RdvController {
         fileRdvs.add(rdv);
     }
 
-    public checkAvailability(String rdv){
-        
+    public boolean isAvailable(Rdv rdv, Laboratoire laboratoire){
+        for (Rdv approvedRdv : laboratoire.getRdvsApprouve()) {
+            if (rdv.getTime().equals(approvedRdv.getTime()) && rdv.getDate().equals(approvedRdv.getDate())){
+                return false;
+            }
+        }
+        return true;
     }
-    
+
+
+    public void approveRdv(Rdv rdv, Laboratoire laboratoire){
+        laboratoire.getRdvsApprouve().add(rdv);
+    }
 }

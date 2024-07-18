@@ -6,14 +6,15 @@ public class RdvAdapter {
 
     public Rdv toRdv(String rdvString) {
         String[] rdvArray = rdvString.split("-");
-        Patient p= centreSoin.findPatientByCode(rdvString.charAt(0));
-        
-        Rdv rdv = new Rdv(p,rdvArray[1],rdvArray[2],new Examen(rdvArray[3],rdvArray[4],rdvArray[5]),rdvArray[6]);
-        return rdv;
+        Patient patient = centreSoin.findPatientByCode(rdvArray[0]);
+        String uniqueId = rdvArray[1];
+        String date = rdvArray[2];
+        String examen = rdvArray[3];
+        String time = rdvArray[4];
+        return new Rdv(patient, uniqueId, date, examen, time);
     }
 
     
-
     public String toRdvString(Rdv rdv) {
         return rdv.getPatient().getCodePatient()+"-"+rdv.getUniqueId()+"-"+rdv.getDate().toString()+"-"+rdv.getExamen().getNom()+"-"+rdv.getDate().toString()+"-"+rdv.getTime();
      }
