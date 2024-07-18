@@ -3,18 +3,20 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-public class NotifieurSMS implements Notifieur {
+public class NotifieurCourriel implements Notifieur {
+    private static final long serialVersionUID = 1L;
+
     private String serviceName;
 
-    public NotifieurSMS(String serviceName) {
+    public NotifieurCourriel(String serviceName) {
         this.serviceName = serviceName;
     }
 
     @Override
-    public void notifier(String message, String destinataire) {
-        String notification = "[" + serviceName + "] SMS envoyé à " + destinataire + ": " + message;
+    public void envoyerNotification(String message, String destinataire) {
+        String notification = "[" + serviceName + "] Courriel envoyé à " + destinataire + ": " + message;
         System.out.println(notification);
-        enregistrerNotification("SMS", notification);
+        enregistrerNotification("Courriel", notification);
     }
 
     @Override
