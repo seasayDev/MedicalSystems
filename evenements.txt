@@ -1,0 +1,90 @@
+[Patient] Événement Attribution-RDV: codePatient=P001,numDemande=1,dateRDV=15-07-2024,heureRDV=14:30
+[Medecin] Événement Attribution-RDV: codePatient=P001,numDemande=1,dateRDV=15-07-2024,heureRDV=14:30
+[Service] Événement Attribution-RDV: codePatient=P001,numDemande=1,dateRDV=15-07-2024,heureRDV=14:30
+[Patient] Événement Attribution-RDV: codePatient=P001,numDemande=1,dateRDV=15-07-2024,heureRDV=14:30
+[Medecin] Événement Attribution-RDV: codePatient=P001,numDemande=1,dateRDV=15-07-2024,heureRDV=14:30
+[Service] Événement Attribution-RDV: codePatient=P001,numDemande=1,dateRDV=15-07-2024,heureRDV=14:30
+[Patient] Événement Attribution-RDV: codePatient=P001,numDemande=1,dateRDV=15-07-2024,heureRDV=14:30
+[Medecin] Événement Attribution-RDV: codePatient=P001,numDemande=1,dateRDV=15-07-2024,heureRDV=14:30
+[Service] Événement Attribution-RDV: codePatient=P001,numDemande=1,dateRDV=15-07-2024,heureRDV=14:30
+[Patient] Événement Résultat-Examen: Resultat: 1, Pour le patient: Dupont ,URI: P001.pdf
+[Medecin] Événement Résultat-Examen: Resultat: 1, Pour le patient: Dupont ,URI: P001.pdf
+[Service] Événement Résultat-Examen: Resultat: 1, Pour le patient: Dupont ,URI: P001.pdf
+[Patient] Événement Résultat-Examen: Resultat: 1, Pour le patient: Dupont ,URI: P001.pdf
+[Medecin] Événement Résultat-Examen: Resultat: 1, Pour le patient: Dupont ,URI: P001.pdf
+[Service] Événement Résultat-Examen: Resultat: 1, Pour le patient: Dupont ,URI: P001.pdf
+[Patient] Événement Résultat-Examen: Resultat: 1, Pour le patient: Dupont ,URI: P001.pdf
+[Medecin] Événement Résultat-Examen: Resultat: 1, Pour le patient: Dupont ,URI: P001.pdf
+[Service] Événement Résultat-Examen: Resultat: 1, Pour le patient: Dupont ,URI: P001.pdf
+[Patient] Événement Attribution-RDV: codePatient=P001,numDemande=1,dateRDV=15-07-2024,heureRDV=14:30
+[Medecin] Événement Attribution-RDV: codePatient=P001,numDemande=1,dateRDV=15-07-2024,heureRDV=14:30
+[Service] Événement Attribution-RDV: codePatient=P001,numDemande=1,dateRDV=15-07-2024,heureRDV=14:30
+[Patient] Événement Attribution-RDV: codePatient=P001,numDemande=1,dateRDV=15-07-2024,heureRDV=14:30
+[Medecin] Événement Attribution-RDV: codePatient=P001,numDemande=1,dateRDV=15-07-2024,heureRDV=14:30
+[Service] Événement Attribution-RDV: codePatient=P001,numDemande=1,dateRDV=15-07-2024,heureRDV=14:30
+[Patient] Événement Attribution-RDV: codePatient=P001,numDemande=1,dateRDV=15-07-2024,heureRDV=14:30
+[Medecin] Événement Attribution-RDV: codePatient=P001,numDemande=1,dateRDV=15-07-2024,heureRDV=14:30
+[Service] Événement Attribution-RDV: codePatient=P001,numDemande=1,dateRDV=15-07-2024,heureRDV=14:30
+[Patient] Événement Résultat-Examen: Resultat: 1, Pour le patient: Dupont ,URI: P001.pdf
+[Medecin] Événement Résultat-Examen: Resultat: 1, Pour le patient: Dupont ,URI: P001.pdf
+[Service] Événement Résultat-Examen: Resultat: 1, Pour le patient: Dupont ,URI: P001.pdf
+[Patient] Événement Résultat-Examen: Resultat: 1, Pour le patient: Dupont ,URI: P001.pdf
+[Medecin] Événement Résultat-Examen: Resultat: 1, Pour le patient: Dupont ,URI: P001.pdf
+[Service] Événement Résultat-Examen: Resultat: 1, Pour le patient: Dupont ,URI: P001.pdf
+[Patient] Événement Résultat-Examen: Resultat: 1, Pour le patient: Dupont ,URI: P001.pdf
+[Medecin] Événement Résultat-Examen: Resultat: 1, Pour le patient: Dupont ,URI: P001.pdf
+[Service] Événement Résultat-Examen: Resultat: 1, Pour le patient: Dupont ,URI: P001.pdf
+[Patient] Événement Attribution-RDV: codePatient=P001,numDemande=1,dateRDV=15-07-2024,heureRDV=14:30
+[Medecin] Événement Attribution-RDV: codePatient=P001,numDemande=1,dateRDV=15-07-2024,heureRDV=14:30
+[Service] Événement Attribution-RDV: codePatient=P001,numDemande=1,dateRDV=15-07-2024,heureRDV=14:30
+[Patient] Événement Attribution-RDV: codePatient=P001,numDemande=1,dateRDV=15-07-2024,heureRDV=14:30
+[Medecin] Événement Attribution-RDV: codePatient=P001,numDemande=1,dateRDV=15-07-2024,heureRDV=14:30
+[Service] Événement Attribution-RDV: codePatient=P001,numDemande=1,dateRDV=15-07-2024,heureRDV=14:30
+[Patient] Événement Attribution-RDV: codePatient=P001,numDemande=1,dateRDV=15-07-2024,heureRDV=14:30
+[Medecin] Événement Attribution-RDV: codePatient=P001,numDemande=1,dateRDV=15-07-2024,heureRDV=14:30
+[Service] Événement Attribution-RDV: codePatient=P001,numDemande=1,dateRDV=15-07-2024,heureRDV=14:30
+[Patient] Événement Résultat-Examen: Resultat: 1, Pour le patient: Dupont ,URI: P001.pdf
+[Medecin] Événement Résultat-Examen: Resultat: 1, Pour le patient: Dupont ,URI: P001.pdf
+[Service] Événement Résultat-Examen: Resultat: 1, Pour le patient: Dupont ,URI: P001.pdf
+[Patient] Événement Résultat-Examen: Resultat: 1, Pour le patient: Dupont ,URI: P001.pdf
+[Medecin] Événement Résultat-Examen: Resultat: 1, Pour le patient: Dupont ,URI: P001.pdf
+[Service] Événement Résultat-Examen: Resultat: 1, Pour le patient: Dupont ,URI: P001.pdf
+[Patient] Événement Résultat-Examen: Resultat: 1, Pour le patient: Dupont ,URI: P001.pdf
+[Medecin] Événement Résultat-Examen: Resultat: 1, Pour le patient: Dupont ,URI: P001.pdf
+[Service] Événement Résultat-Examen: Resultat: 1, Pour le patient: Dupont ,URI: P001.pdf
+[Patient] Événement Attribution-RDV: codePatient=P001,numDemande=1,dateRDV=15-07-2024,heureRDV=14:30
+[Medecin] Événement Attribution-RDV: codePatient=P001,numDemande=1,dateRDV=15-07-2024,heureRDV=14:30
+[Service] Événement Attribution-RDV: codePatient=P001,numDemande=1,dateRDV=15-07-2024,heureRDV=14:30
+[Patient] Événement Attribution-RDV: codePatient=P001,numDemande=1,dateRDV=15-07-2024,heureRDV=14:30
+[Medecin] Événement Attribution-RDV: codePatient=P001,numDemande=1,dateRDV=15-07-2024,heureRDV=14:30
+[Service] Événement Attribution-RDV: codePatient=P001,numDemande=1,dateRDV=15-07-2024,heureRDV=14:30
+[Patient] Événement Attribution-RDV: codePatient=P001,numDemande=1,dateRDV=15-07-2024,heureRDV=14:30
+[Medecin] Événement Attribution-RDV: codePatient=P001,numDemande=1,dateRDV=15-07-2024,heureRDV=14:30
+[Service] Événement Attribution-RDV: codePatient=P001,numDemande=1,dateRDV=15-07-2024,heureRDV=14:30
+[Patient] Événement Résultat-Examen: Resultat: 1, Pour le patient: Dupont ,URI: P001.pdf
+[Medecin] Événement Résultat-Examen: Resultat: 1, Pour le patient: Dupont ,URI: P001.pdf
+[Service] Événement Résultat-Examen: Resultat: 1, Pour le patient: Dupont ,URI: P001.pdf
+[Patient] Événement Résultat-Examen: Resultat: 1, Pour le patient: Dupont ,URI: P001.pdf
+[Medecin] Événement Résultat-Examen: Resultat: 1, Pour le patient: Dupont ,URI: P001.pdf
+[Service] Événement Résultat-Examen: Resultat: 1, Pour le patient: Dupont ,URI: P001.pdf
+[Patient] Événement Résultat-Examen: Resultat: 1, Pour le patient: Dupont ,URI: P001.pdf
+[Medecin] Événement Résultat-Examen: Resultat: 1, Pour le patient: Dupont ,URI: P001.pdf
+[Service] Événement Résultat-Examen: Resultat: 1, Pour le patient: Dupont ,URI: P001.pdf
+[Patient] Événement Attribution-RDV: codePatient=P001,numDemande=1,dateRDV=15-07-2024,heureRDV=14:30
+[Medecin] Événement Attribution-RDV: codePatient=P001,numDemande=1,dateRDV=15-07-2024,heureRDV=14:30
+[Service] Événement Attribution-RDV: codePatient=P001,numDemande=1,dateRDV=15-07-2024,heureRDV=14:30
+[Patient] Événement Attribution-RDV: codePatient=P001,numDemande=1,dateRDV=15-07-2024,heureRDV=14:30
+[Medecin] Événement Attribution-RDV: codePatient=P001,numDemande=1,dateRDV=15-07-2024,heureRDV=14:30
+[Service] Événement Attribution-RDV: codePatient=P001,numDemande=1,dateRDV=15-07-2024,heureRDV=14:30
+[Patient] Événement Attribution-RDV: codePatient=P001,numDemande=1,dateRDV=15-07-2024,heureRDV=14:30
+[Medecin] Événement Attribution-RDV: codePatient=P001,numDemande=1,dateRDV=15-07-2024,heureRDV=14:30
+[Service] Événement Attribution-RDV: codePatient=P001,numDemande=1,dateRDV=15-07-2024,heureRDV=14:30
+[Patient] Événement Résultat-Examen: Resultat: 1, Pour le patient: Dupont ,URI: P001.pdf
+[Medecin] Événement Résultat-Examen: Resultat: 1, Pour le patient: Dupont ,URI: P001.pdf
+[Service] Événement Résultat-Examen: Resultat: 1, Pour le patient: Dupont ,URI: P001.pdf
+[Patient] Événement Résultat-Examen: Resultat: 1, Pour le patient: Dupont ,URI: P001.pdf
+[Medecin] Événement Résultat-Examen: Resultat: 1, Pour le patient: Dupont ,URI: P001.pdf
+[Service] Événement Résultat-Examen: Resultat: 1, Pour le patient: Dupont ,URI: P001.pdf
+[Patient] Événement Résultat-Examen: Resultat: 1, Pour le patient: Dupont ,URI: P001.pdf
+[Medecin] Événement Résultat-Examen: Resultat: 1, Pour le patient: Dupont ,URI: P001.pdf
+[Service] Événement Résultat-Examen: Resultat: 1, Pour le patient: Dupont ,URI: P001.pdf

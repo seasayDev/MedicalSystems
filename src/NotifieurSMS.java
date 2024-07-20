@@ -1,3 +1,8 @@
+/**
+ * La classe NotifieurSMS implémente l'interface Notifieur.
+ * Elle représente un système de notification par SMS, avec des fonctionnalités
+ * pour envoyer des notifications et enregistrer des événements.
+ */
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -8,10 +13,21 @@ public class NotifieurSMS implements Notifieur {
 
     private String serviceName;
 
+    /**
+     * Constructeur de la classe NotifieurSMS.
+     *
+     * @param serviceName le nom du service de notification
+     */
     public NotifieurSMS(String serviceName) {
         this.serviceName = serviceName;
     }
 
+    /**
+     * Envoie une notification par SMS à un destinataire spécifié.
+     *
+     * @param message      le message de la notification
+     * @param destinataire le destinataire de la notification
+     */
     @Override
     public void envoyerNotification(String message, String destinataire) {
         String notification = "[" + serviceName + "] SMS envoyé à " + destinataire + ": " + message;
@@ -19,6 +35,12 @@ public class NotifieurSMS implements Notifieur {
         enregistrerNotification("SMS", notification);
     }
 
+    /**
+     * Enregistre un événement avec un type et un message associés.
+     *
+     * @param type    le type de l'événement
+     * @param message le message associé à l'événement
+     */
     @Override
     public void enregistrerEvenement(String type, String message) {
         String evenement = "[" + serviceName + "] Événement " + type + ": " + message;
@@ -26,10 +48,22 @@ public class NotifieurSMS implements Notifieur {
         enregistrerDansFichier("evenements.txt", evenement);
     }
 
+    /**
+     * Enregistre une notification dans un fichier de notifications.
+     *
+     * @param type         le type de la notification
+     * @param notification le contenu de la notification
+     */
     private void enregistrerNotification(String type, String notification) {
         enregistrerDansFichier("notifications.txt", "Notification " + type + ": " + notification);
     }
 
+    /**
+     * Enregistre un contenu spécifié dans un fichier donné.
+     *
+     * @param nomFichier le nom du fichier dans lequel enregistrer le contenu
+     * @param contenu    le contenu à enregistrer
+     */
     private void enregistrerDansFichier(String nomFichier, String contenu) {
         try (FileWriter fw = new FileWriter(nomFichier, true);
              BufferedWriter bw = new BufferedWriter(fw);

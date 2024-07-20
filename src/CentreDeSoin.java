@@ -1,3 +1,9 @@
+/**
+ * La classe CentreDeSoin représente un centre de soins médical avec ses informations
+ * de contact et les gestionnaires pour les notifications, les laboratoires, les patients,
+ * les médecins, les examens, les prescriptions et les demandes de rendez-vous.
+ * Elle implémente l'interface Serializable pour permettre la sérialisation des instances de cette classe.
+ */
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Date;
@@ -20,6 +26,14 @@ public class CentreDeSoin implements Serializable {
     private List<Prescription> prescriptions;
     private List<DemandeRDV> demandesRDV;
 
+    /**
+     * Constructeur de la classe CentreDeSoin.
+     *
+     * @param nom       le nom du centre de soins
+     * @param adresse   l'adresse du centre de soins
+     * @param telephone le numéro de téléphone du centre de soins
+     * @param courriel  l'adresse email du centre de soins
+     */
     public CentreDeSoin(String nom, String adresse, String telephone, String courriel) {
         this.nom = nom;
         this.adresse = adresse;
@@ -34,34 +48,76 @@ public class CentreDeSoin implements Serializable {
         this.demandesRDV = new ArrayList<>();
     }
 
+    /**
+     * Ajoute un laboratoire à la liste des laboratoires associés.
+     *
+     * @param laboratoire le laboratoire à ajouter
+     */
     public void ajouterLaboratoire(Laboratoire laboratoire) {
         laboratoires.add(laboratoire);
     }
 
+    /**
+     * Ajoute un patient à la liste des patients.
+     *
+     * @param patient le patient à ajouter
+     */
     public void ajouterPatient(Patient patient) {
         patients.add(patient);
     }
 
+    /**
+     * Ajoute un médecin à la liste des médecins.
+     *
+     * @param medecin le médecin à ajouter
+     */
     public void ajouterMedecin(Medecin medecin) {
         medecins.add(medecin);
     }
 
+    /**
+     * Ajoute un examen à la liste des examens.
+     *
+     * @param examen l'examen à ajouter
+     */
     public void ajouterExamen(Examen examen) {
         examens.add(examen);
     }
 
+    /**
+     * Ajoute une prescription à la liste des prescriptions.
+     *
+     * @param prescription la prescription à ajouter
+     */
     public void ajouterPrescription(Prescription prescription) {
         prescriptions.add(prescription);
     }
 
+    /**
+     * Ajoute une demande de rendez-vous à la liste des demandes de rendez-vous.
+     *
+     * @param demande la demande de rendez-vous à ajouter
+     */
     public void ajouterDemandeRDV(DemandeRDV demande) {
         demandesRDV.add(demande);
     }
 
+    /**
+     * Retourne la liste des demandes de rendez-vous.
+     *
+     * @return la liste des demandes de rendez-vous
+     */
     public List<DemandeRDV> getDemandesRDV() {
         return demandesRDV;
     }
 
+    /**
+     * Crée une prescription pour un patient par un médecin, incluant des examens.
+     *
+     * @param patient  le patient pour lequel la prescription est faite
+     * @param medecin  le médecin qui fait la prescription
+     * @param examens  la liste des examens inclus dans la prescription
+     */
     public void creerPrescription(Patient patient, Medecin medecin, List<Examen> examens) {
         Prescription prescription = new Prescription(new Date(), prescriptions.size() + 1, examens);
         prescriptions.add(prescription);
@@ -72,9 +128,11 @@ public class CentreDeSoin implements Serializable {
         }
     }
 
-
-
-
+    /**
+     * Envoie une demande de rendez-vous à un laboratoire.
+     *
+     * @param demande la demande de rendez-vous à envoyer
+     */
     public void envoyerDemandeRDV(DemandeRDV demande) {
         Laboratoire laboratoire = choisirLaboratoire(demande.getExamen());
         if (laboratoire != null) {
@@ -85,9 +143,11 @@ public class CentreDeSoin implements Serializable {
         }
     }
 
-
-
-
+    /**
+     * Envoie le résultat d'un examen à un laboratoire.
+     *
+     * @param demande la demande de rendez-vous liée à l'examen
+     */
     public void envoyerResultatExamen(DemandeRDV demande) {
         Laboratoire laboratoire = choisirLaboratoire(demande.getExamen());
         if (laboratoire != null) {
@@ -98,6 +158,13 @@ public class CentreDeSoin implements Serializable {
         }
     }
 
+    /**
+     * Reçoit les résultats d'examens pour un patient.
+     *
+     * @param patient le patient pour lequel les résultats sont reçus
+     * @param medecin le médecin qui a prescrit les examens
+     * @param examens la liste des examens dont les résultats sont reçus
+     */
     public void RecevoirResultatExamen(Patient patient, Medecin medecin, List<Examen> examens) {
         Prescription prescription = new Prescription(new Date(), prescriptions.size() + 1, examens);
         prescriptions.add(prescription);
@@ -108,11 +175,12 @@ public class CentreDeSoin implements Serializable {
         }
     }
 
-
-
-
-
-
+    /**
+     * Choisit un laboratoire capable de réaliser un examen donné.
+     *
+     * @param examen l'examen pour lequel un laboratoire est choisi
+     * @return le laboratoire choisi ou null si aucun laboratoire n'est disponible
+     */
     private Laboratoire choisirLaboratoire(Examen examen) {
         List<Laboratoire> laboratoiresCompatibles = new ArrayList<>();
         for (Laboratoire laboratoire : laboratoires) {
@@ -127,6 +195,11 @@ public class CentreDeSoin implements Serializable {
         return laboratoiresCompatibles.get(random.nextInt(laboratoiresCompatibles.size()));
     }
 
+    /**
+     * Attribue un rendez-vous en fonction de la réponse d'un laboratoire.
+     *
+     * @param reponse la réponse du laboratoire contenant les détails du rendez-vous
+     */
     public void attributionRDV(String reponse) {
         String[] pairs = reponse.split(",");
         String codePatient = null;
@@ -164,21 +237,37 @@ public class CentreDeSoin implements Serializable {
         }
     }
 
+    /**
+     * Traite les résultats d'examen et notifie le médecin et le service.
+     *
+     * @param resultat le résultat de l'examen
+     */
     public void resultatExamen(String resultat) {
         // Logique pour traiter les résultats d'examen et notifier le médecin et le service
         gestionnaireNotifications.enregistrerEvenement("Résultat-Examen", resultat);
     }
 
-
-
+    /**
+     * Sauvegarde les données du centre de soins.
+     */
     public void sauvegarder() {
         GestionnaireDonnees.sauvegarderDonnees(this);
     }
 
+    /**
+     * Charge les données du centre de soins.
+     *
+     * @return une instance de CentreDeSoin avec les données chargées
+     */
     public static CentreDeSoin charger() {
         return (CentreDeSoin) GestionnaireDonnees.chargerDonnees();
     }
 
+    /**
+     * Retourne le gestionnaire de notifications.
+     *
+     * @return le gestionnaire de notifications
+     */
     public GestionnaireNotifications getGestionnaireNotifications() {
         return gestionnaireNotifications;
     }
